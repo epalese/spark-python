@@ -1,8 +1,8 @@
 import os
 import subprocess
 import sys
-import platform
-import atexit
+# import platform
+# import atexit
 
 def bootstrap(spark_home):
     # SPARK_HOME="/Users/fix/dev/spark-1.4.1-bin-hadoop2.6"
@@ -26,9 +26,8 @@ def bootstrap(spark_home):
     import py4j
     import pyspark
 
-    # code from the shell.py
-    add_files = None
-    if os.environ.get("ADD_FILES") is not None:
-        add_files = os.environ.get("ADD_FILES").split(',')
-
     # TODO: add shell.py initialisation
+    # code from the shell.py
+    # add_files = None
+    # if os.environ.get("ADD_FILES") is not None:
+    #    add_files = os.environ.get("ADD_FILES").split(',')
