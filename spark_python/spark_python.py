@@ -13,7 +13,7 @@ def bootstrap(spark_home):
     # store the environment variables in the current environment
     # http://stackoverflow.com/questions/7040592/calling-the-source-command-from-subprocess-popen
     load_spark_env_path = SPARK_HOME + '/bin/load-spark-env.sh'
-    command = 'echo "source ' + load_spark_env_path + '; env" | bash'
+    command = 'cd ' + SPARK_HOME + '/conf' + '; echo "source ' + load_spark_env_path + '; env" | bash'
     pipe = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
     output = pipe.communicate()[0]
     env = dict((line.split("=", 1) for line in output.splitlines()))
