@@ -9,7 +9,7 @@ pip install dist/spark_python-0.0.1.tar.gz
 
 ## Usage
 ```python
-import spark_python.spark as sp
+import spark_python.spark_python as sp
 sp.bootstrap('/Users/fix/dev/spark-1.4.1-bin-hadoop2.6')
 
 import pyspark
