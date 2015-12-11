@@ -24,7 +24,7 @@ def bootstrap(spark_home):
     sys.path.append(SPARK_HOME + '/python/lib/py4j-0.8.2.1-src.zip')
 
     import py4j
-    import pyspark
+    # import pyspark
 
     # TODO: add shell.py initialisation
     # code from the shell.py
